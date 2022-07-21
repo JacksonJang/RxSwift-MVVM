@@ -1,10 +1,17 @@
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
-
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let service = PeopleService()
+        service.getPeople().subscribe(onNext: { people in
+            print(people)
+        }).disposed(by: disposeBag)
+        
     }
 
 
