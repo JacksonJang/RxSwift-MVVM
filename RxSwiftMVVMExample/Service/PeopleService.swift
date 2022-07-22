@@ -1,7 +1,11 @@
 import Foundation
 import RxSwift
 
-class PeopleService {
+protocol PeopleServiceProtocol {
+    func getPeople() -> Observable<[Person]>
+}
+
+class PeopleService: PeopleServiceProtocol {
     func getPeople() -> Observable<[Person]> {
         return Observable.create { observer -> Disposable in
             guard let path = Bundle.main.path(forResource: "people", ofType: "json") else {

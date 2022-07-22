@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D743C6C763A0A42DDED3A97 /* Pods_RxSwiftMVVMExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF93C9C55DD67B34C02870 /* Pods_RxSwiftMVVMExample.framework */; };
+		E23A835E288ABAEF0037EF11 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A835D288ABAEF0037EF11 /* PeopleListViewModel.swift */; };
+		E23A8360288ABC040037EF11 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A835F288ABC040037EF11 /* PeopleViewModel.swift */; };
 		E24DEF5828898F9300A4BE97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DEF5728898F9300A4BE97 /* AppDelegate.swift */; };
 		E24DEF5A28898F9300A4BE97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DEF5928898F9300A4BE97 /* SceneDelegate.swift */; };
 		E24DEF5C28898F9300A4BE97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DEF5B28898F9300A4BE97 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 		6FCF90ED470C1BB2A3A56B5E /* Pods-RxSwiftMVVMExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVMExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVMExample/Pods-RxSwiftMVVMExample.debug.xcconfig"; sourceTree = "<group>"; };
 		75AFE476536DBF5FE533DAC4 /* Pods-RxSwiftMVVMExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVMExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVMExample/Pods-RxSwiftMVVMExample.release.xcconfig"; sourceTree = "<group>"; };
 		8AEF93C9C55DD67B34C02870 /* Pods_RxSwiftMVVMExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMVVMExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23A835D288ABAEF0037EF11 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		E23A835F288ABC040037EF11 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		E24DEF5428898F9300A4BE97 /* RxSwiftMVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24DEF5728898F9300A4BE97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24DEF5928898F9300A4BE97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				E24DEF71288991FC00A4BE97 /* Service */,
+				E24DEF78288ABA8E00A4BE97 /* ViewModel */,
 				E24DEF6E2889919E00A4BE97 /* Model */,
 				E24DEF6B2889910D00A4BE97 /* Resource */,
 				E24DEF5728898F9300A4BE97 /* AppDelegate.swift */,
@@ -113,6 +118,15 @@
 				E24DEF722889920600A4BE97 /* PeopleService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		E24DEF78288ABA8E00A4BE97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E23A835D288ABAEF0037EF11 /* PeopleListViewModel.swift */,
+				E23A835F288ABC040037EF11 /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FC9C06CA2FA81E09D000DC91 /* Pods */ = {
@@ -241,8 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24DEF70288991A900A4BE97 /* People.swift in Sources */,
+				E23A835E288ABAEF0037EF11 /* PeopleListViewModel.swift in Sources */,
 				E24DEF5C28898F9300A4BE97 /* ViewController.swift in Sources */,
 				E24DEF5828898F9300A4BE97 /* AppDelegate.swift in Sources */,
+				E23A8360288ABC040037EF11 /* PeopleViewModel.swift in Sources */,
 				E24DEF5A28898F9300A4BE97 /* SceneDelegate.swift in Sources */,
 				E24DEF732889920600A4BE97 /* PeopleService.swift in Sources */,
 			);

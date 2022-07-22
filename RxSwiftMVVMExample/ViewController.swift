@@ -4,6 +4,8 @@ import RxSwift
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     
+    private var viewModel: PeopleListViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -13,7 +15,6 @@ class ViewController: UIViewController {
         }).disposed(by: disposeBag)
         
     }
-
-
+    
 }
 
